@@ -9,6 +9,38 @@
 <body>
 
   <!-- Write your code here -->
+<form action="">
+  <fieldset>
+    <legend>Personal information</legend>
+      <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"><br>
+      <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+      <label for="how_old">How old are You?</label>
+        <input type="text" id="how_old" name="how_old"><br>    
+      <label for="birth">Full date of birth:</label>
+        <input type="text" id="birth" name="birth"><br>    
+      <label for="terms">I accept the terms of the agreement</label>
+        <input type="checkbox" id="terms" name="terms">
+  </fieldset><br>
+  <fieldset>
+    <legend>Registration</legend>
+      <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com"><br>
+      <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+  </fieldset>
+  <fieldset>
+    <legend>An interesting fact about you!</legend>
+      Do you love cats?
+      <input type="radio" id="yes" name="cats" value="yes">
+        <label for="yes">Yes</label>
+      <input type="radio" id="no" name="cats" value="yes">
+        <label for="no">No</label> <br>
+      <label for="color">What is your favorite color?</label>
+        <input type="color" id="color" name="color" value="black">
+  </fieldset>
+</form>
 
 </body>
 </html>
@@ -17,9 +49,9 @@
 
 <!-- https://prnt.sc/5uiwlauLrACe
 Створити форму на основі наданого знімку екрану та опису нижче:
-Відкрити screenshot
+Відкрити screenshot (https://prnt.sc/fbFBfQgShTZu)
 https://mate-academy-images.s3.eu-central-1.amazonaws.com/form_example_f93e749a84.png
-дані форми повинні надсилатись за допомогою методу POST на https://mate-academy-form-lesson.herokuapp.com/create-application;
+дані форми повинні надсилатись за допомогою методу POST на https://mate-academy-form-lesson.herokuapp.com/create-application (heroku.com);
 повинно бути 4 набори полів з правильними заголовками та класами fieldset;
 кнопка Submit повинна мати правильний тип;
 всі поля повинні мати name та label;
